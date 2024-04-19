@@ -27,8 +27,9 @@ body {
     height: 100px;
     display: flex;
     align-items: center;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     justify-content: space-between;
+    border-bottom: 1px solid #002866;
 }
 
 .header .logo {
@@ -40,7 +41,124 @@ body {
     display: flex;
 }
 
-.nav li a {
-    background-color: red;
-    padding: 30px;
+.nav li a { 
+    display: block;
+    /* background-color: red; */
+    padding: 0 40px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.nav li a:hover {
+    color: orangered;
+}
+
+/* contents */
+
+.contents {
+    display: flex;
+    height: 200px;
+    padding: 10px 0;
+    gap: 24px;
+}
+
+.tab {
+    /* background-color: #ddd; */
+    flex: 1;
+}
+
+.tab_title {
+    height: 51px;
+    display: flex;
+    /* background-color: #ccc; */
+    gap: 4px;
+    border-bottom: 3px solid #fe6347;
+}
+
+.tab_title h3 {
+    flex: 1;
+    background-color: #fe6347;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: #f0f0f0;
+}
+
+.tab_title h3.dim {
+    background-color: #ddd;
+    color: #000;
+}
+
+.tab_contents li a {
+    display: block;
+    padding:  4px 0;
+}
+
+.tab_contents li a:hover {
+    text-decoration: underline;
+}
+
+
+.banner {
+    flex: 1;
+}
+
+.links {
+    /* background-color: #ddd; */
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.links a {
+    display: flex;
+    gap: 8px;
+    width: 184px;
+    height: 85px;
+    background-color: #d9d9d9;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+
+.links a i {
+    font-size: 20px;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #eee;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer .footer_logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #666;
+}
+
+.footer .sns {
+    display: flex;
+    gap: 24px;
+}
+
+.footer .sns a {
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+}
+
+.footer .sns a i {
+    font-size: 20px;
+    gap: 8px;
 }
