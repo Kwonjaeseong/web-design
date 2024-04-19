@@ -121,6 +121,7 @@ a {
 .lks {
     flex: 1;
     display: flex;
+    /* flex 된 백그라운드를 크기 그대로 부모 백그라운드 영역 안으로 정렬할 수 있게 해준다*/
     flex-wrap: wrap;
     gap: 10px 16px;
 }
