@@ -84,7 +84,19 @@ body {
 
 .sldiers {}
 
-.slide {}
+.slide {
+    position: relative;
+}
+
+.slide h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+    transform: translate(-50%, -50%);
+}
 
 .slide img {
     display: block;
@@ -135,6 +147,12 @@ body {
 .notice li a {
     display: block;
     padding: 4px 0;
+    /* background-color: red; */
+    width: 70%;
+    /* 긴 문장 ...으로 사이즈에 맞게 처리하는 방법 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .notice li a:hover {
@@ -177,7 +195,32 @@ body {
 }
 
 .modal {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 340px;
+    background-color: #fff;
+    border: 1px solid #666;
+    padding: 30px;
     display: none;
+}
+
+.modal h3 {
+    font-size: 24px;
+}
+
+.modal p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.modal button {
+    border: none;
+    padding: 6px 10px;
+    background-color: #666;
+    color: #fff;
 }
 
 
