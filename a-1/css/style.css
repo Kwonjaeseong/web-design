@@ -194,6 +194,10 @@ body {
     background-color: #ddd;
 }
 
+.sns a img {
+   border-radius: 8px; 
+}
+
 .modal {
     position: absolute;
     top: 35%;
