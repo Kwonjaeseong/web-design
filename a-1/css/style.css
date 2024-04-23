@@ -80,7 +80,7 @@ body {
 .slider {
     height: 300px;
     /* 내 영역 바깥으로 나가있는걸 숨겨줌 */
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 
