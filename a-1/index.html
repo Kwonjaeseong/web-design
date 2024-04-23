@@ -137,6 +137,8 @@
                     $(".modal").hide()
                 })
             //slide
+
+            // animate를 이용해서 먼저 -100%를 통해 두번째 사진이 위로 올라가고, 그다음 this append를 통해 올라갔던 첫번째 사진은 3번째 아래로 보내준다. 그후 css top 0을 줘서 3번째 사진이 위로 올라가게 한다.
             setInterval(function(){
                 $(".sliders").animate({top: "-100%"}, function(){
                     $(this).append($(".slide").eq(0))
