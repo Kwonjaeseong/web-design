@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY</title>
+    <SCript src="./script/jquery-1.12.4.js"></SCript>
+    <link rel="stylesheet" href="./css/jquery.css">
+</head>
+<body>
+    <button id="showPopup">팝업창 보기</button>
+    <button class="btn1">버튼</button>
+    <button class="btn2">버튼2</button>
+    <p>안녕하세요</p>
+
+    <ul class="gnb">
+        <li>
+            <a href="#">뉴스</a>
+            <ul class="sub">
+                <li><a href="#">정치</a></li>
+                <li><a href="#">경제</a></li>
+                <li><a href="#">문화</a></li>
+                <li><a href="#">사회</a></li>
+                <li><a href="#">과학</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="box">123</div>
+
+    <div class="popup">
+        <h2>안녕하세요</h2>
+        <button id="closePopup">닫기</button>
+    </div>
+
+    <SCRIpt>
+        $(function(){
+            // $(".btn1").click(function(){
+            //     $("p").hide()
+            // })
+
+            // $("btn2").click(function(){
+            //     $("p").show()
+            // })
+
+            // // gnb
+            // $(".gnb").mouseenter(function(){
+            // $(".sub").slideDown()
+            // })
+
+            // $(".gnb").mouseleave(function(){
+            // $(".sub").slideUp()
+            // })
+
+            $(".gnb").hover(
+                function(){
+                    $(".sub").slideDown()
+                },
+                function(){
+                    $(".sub").slideUp()
+                }
+            )
+
+            //box
+            $(".box").mouseenter(function(){
+                $(this).animate({width: 300, height: 300}, 1000, function(){
+                    console.log("안녕하세요")
+                })
+
+            })
+
+            //popup
+            $("#showPopup").click(function(){
+                $(".popup").show()
+            })
+            $("#closePopup").click(function(){
+                $(".popup").hide()
+            })
+
+        })
+
+       
+    </SCRIpt>
+</body>
+</html>
