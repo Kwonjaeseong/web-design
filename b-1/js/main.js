@@ -25,7 +25,9 @@
                 var idx = $(this).index()
 
                 $(".tab_contents ul").hide()
+                // 내가 클릭한 것의 tab_contents 인덱스를 보여주게 한다.
                 $(".tab_contents ul").eq(idx).show()
+          
                 
 
             })
@@ -38,5 +40,6 @@
             $("#closeModal").click(function(){
                 $(".modal").hide()
             })
+
 
         })
