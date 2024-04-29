@@ -29,16 +29,6 @@ body {
     justify-content: space-between;
 }
 
-.gnb::after {
-    content: "";
-    width: 1200px;
-    height: 0;
-    background-color: #eee;
-    position: absolute;
-    top:100px;
-    right: 0;
-    transition: all .5s;
-}
 
 .gnb.active::after {
     height: 216px;
@@ -47,7 +37,6 @@ body {
 .gnb {
     display: flex;
     z-index: 1;
-    position: relative;
 }
 
 .gnb > li {
@@ -80,11 +69,13 @@ body {
     text-align: center;
     padding: 10px;
     z-index: 1;
+    background-color: #eee;
 }
 
 .gnb .sub li a {
     display: block;
     padding: 14px;
+
 }
 
 .gnb .sub li a:hover {
@@ -210,16 +201,61 @@ body {
 
 .footer {
     display: flex;
-    height: 100px;
     align-items: center;
-    padding: 20px;
-    justify-content: space-between;
     background-color: #ddd;
 }
 
-.sns a img {
-   border-radius: 8px; 
+.footer_menu {
+    width: 1000px;
 }
+
+.footer_menu .f_menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+/* :last-child를 사용해서 li중에서 제일 끝에 녀석의 a 끝을 지정해서 설정할 수 있다. */
+.f_menu li:last-child a {
+    border-right: none;
+}
+
+.f_menu a {
+    display: block;
+    font-weight: bold;
+    padding: 0px 25px;
+    border-right: 1px solid #333;
+}
+
+.f_menu a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.family_site {
+    width: 200px;
+    display: flex;
+    text-align: center;
+    /* flex direction column을 사용하면 박스 내 아이템들이 세로로 배열된다. */
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    border-left: 1px solid #999;
+}
+
+.family_site:hover {
+    text-decoration: underline;
+}
+
+
 
 .modal {
     position: absolute;

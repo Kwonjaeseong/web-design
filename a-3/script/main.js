@@ -1,14 +1,14 @@
 $(function(){
     //gnb
     // stop을 주면 마우스를 가져댔다 뗄때마다 효과가 적용되는 것을 멈추게 해준다.
-    $(".gnb").hover(
+    // .find를 이용하면 개별로 메뉴바만 뜨게 끔 설정할 수 있다.
+    $(".gnb li").hover(
         function() {
-            $(this).addClass("active")
-            $(".sub").stop() .slideDown()
+            $(this).find(".sub").stop() .slideDown()
         },
         function() {
             $(this).removeClass("active")
-            $(".sub").stop() .slideUp()
+            $(this).find(".sub").stop() .slideUp()
         }
     )
     //modal
