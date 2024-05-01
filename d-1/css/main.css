@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+.main {
+    display: flex;
+}
+
+.header {
+    width: 200px;
+}
+
+.header .logo {
+    padding: 20px 0;
+}
+
+.gnb {
+    text-align: center;
+    position: relative;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    border: 1px solid #999;
+    height: 56px;
+    line-height: 56px;
+}
+
+.gnb > li:hover > a {
+    background-color: #ddd;
+}
+
+.gnb .sub {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 600px;
+    display: flex;
+    gap: 30px;
+}
+
+.gnb .sub li {
+    width: 120px;
+}
+
+.gnb .sub a {
+    display: block;
+    height: 56px;
+    line-height: 56px;
+}
+
+.gnb .sub a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.gnb::after {
+    content: '';
+    /* vw=내 모니터의 넓이 */
+    width: calc(100vw - 190px);
+    height: 224px;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+
+.header .gnb_container {
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user a {
+    display: block;
+    padding: 0px 15px;
+    margin-top: 20px;
+    border-right: 1px solid #999;
+}
+
+.user a:last-child {
+    border: none;
+}
+
+.user a:hover {
+    text-decoration: underline;
+}
+
+.contents {
+    /* 설정한 값 의 나머지를 의미함. */
+    width: calc(100% - 200px);
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.f_logo {
+    width: 200px;
+}
+
+.f_contents {
+    flex: 1;
+}
+
+.sns {
+    width: 250px;
+}
+
