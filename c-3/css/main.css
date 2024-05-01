@@ -105,6 +105,18 @@ body {
     display: block;
 }
 
+.notice {
+    width: 260px;
+}
+
+.gallery {
+    width: 260px;
+}
+
+.banner {
+    width: 260px;
+}
+
 
 .modal {
     display: none;
