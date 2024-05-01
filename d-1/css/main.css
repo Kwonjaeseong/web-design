@@ -256,10 +256,12 @@ body {
 
 .tab_contents {}
 
+
 .tab_contents .notice {
     border: 1px solid #999;
     padding: 20px 36px;
-}
+    /* display: none; */
+    }
 
 .notice li {
     display: flex;
@@ -281,14 +283,29 @@ body {
 }
 
 .gallery {
+    border: 1px solid #999;
+    padding: 10px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     display: none;
 }
 
+.gallery li {
+    width: 300px;
+    height: 160px;
+}
+
+.gallery a {
+}
 
 
-
-
-
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -307,7 +324,30 @@ body {
     flex: 1;
 }
 
+.f_contents p {
+    height: 50px;
+    text-align: center;
+}
+
+.f_menu {
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+.f_menu a {
+    border-right: 1px solid #999;
+    padding: 6px 30px ;
+}
+
+.f_menu a:last-child{
+    border: none;
+}
+
 .sns {
     width: 250px;
+    text-align: center;
 }
 
