@@ -31,8 +31,9 @@ body {
 }
 
 .gnb {
-    text-align: center;
     position: relative;
+    padding: 0 10px;
+    z-index: 1;
 }
 
 .gnb li {
@@ -48,6 +49,7 @@ body {
     border: 1px solid #999;
     height: 56px;
     line-height: 56px;
+    text-align: center;
 }
 
 .gnb > li:hover > a {
@@ -60,7 +62,6 @@ body {
     top: 7px;
     left: 200px;
     width: 600px;
-    display: flex;
     gap: 30px;
     display: none;
 }
@@ -68,12 +69,17 @@ body {
 .gnb .sub li {
     width: 120px;
     height: 40px;
+    display: inline-block;
 }
 
 .gnb .sub a {
     display: block;
     height: 40px;
     line-height: 40px;
+}
+
+.gnb .sub li {
+    text-align: center;
 }
 
 .gnb .sub a:hover {
@@ -89,12 +95,15 @@ body {
     background-color: #ddd;
     position: absolute;
     top: 0;
-    left: 180px;
+    left: 190px;
     display: none;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
-.header .gnb_container {
-    padding: 10px;
+.gnb.on::after {
+    display: block;
+    opacity: 1;
 }
 
 .user {
@@ -260,7 +269,6 @@ body {
 .tab_contents .notice {
     border: 1px solid #999;
     padding: 20px 36px;
-    /* display: none; */
     }
 
 .notice li {
@@ -283,30 +291,19 @@ body {
 }
 
 .gallery {
-    border: 1px solid #999;
-    padding: 10px 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
     display: none;
+    border: 1px solid #999;
+    padding: 16px 36px;
 }
 
 .gallery li {
-    width: 300px;
-    height: 160px;
+    display: inline-block;
+    margin-right: 20px;
 }
-
-.gallery a {
-}
-
 
 .gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 180px;
 }
-
 
 
 .footer{
@@ -322,24 +319,26 @@ body {
 
 .f_contents {
     flex: 1;
+    padding: 0 40px;
 }
 
-.f_contents p {
-    height: 50px;
-    text-align: center;
-}
 
 .f_menu {
-    display: block;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
+    margin-bottom: 10px;
 }
 
-
 .f_menu a {
+    display: inline-block;
     border-right: 1px solid #999;
-    padding: 6px 30px ;
+    padding: 3px 16px ;
+}
+
+.f_menu a:first-child {
+    padding-left: 0;
+}
+
+.f_menu a:hover {
+    text-decoration: underline;
 }
 
 .f_menu a:last-child{
