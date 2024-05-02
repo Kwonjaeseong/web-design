@@ -17,3 +17,199 @@ body {
     color: #333;
     background-color: #fff;
 }
+
+.main {
+    display: flex;
+}
+
+.header {
+    width: 200px;
+    border-right: 1px solid #ccc;
+}
+
+.logo {
+    margin: 20px 0;
+}
+
+.gnb {
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 14px 0;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+
+.gnb > li:hover > a {
+    background-color: #ddd;
+    color: orangered;
+}
+
+.gnb .sub {
+    display: none;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: 220px;
+    background-color: #ddd;
+    display: none;
+}
+
+.gnb ul a {
+    display: block;
+    padding: 14px 20px;
+}
+
+.gnb ul a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.user {
+    text-align: center;
+}
+
+.user a {
+    display: inline-block;
+    padding: 2px 13px;
+    border-right: 1px solid #999;
+}
+
+.user a:hover {
+    text-decoration: underline;
+}
+
+.user a:last-child {
+    border: none;
+}
+
+.contents {
+    width: 400px;
+    padding: 20px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.banner .photo {
+    width: 60px;
+    height: 60px;
+}
+
+.banner .texts {
+    flex: 1;
+    margin-left: 16px;
+}
+
+.banner .texts:hover {
+    text-decoration: underline;
+}
+
+.banner .arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #333;
+    border-right: 3px solid #333;
+    transform: rotate(45deg);
+}
+
+.banner .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+
+.notice {
+    margin: 20px 0;
+}
+
+.notice ul {
+    padding: 10px 0;
+}
+
+
+.notice h3, .gallery h3 {
+    border-bottom: 1px solid #999;
+    padding: 10px 2px;
+}
+
+.notice li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice li a {
+    padding: 10px 0;
+}
+
+.notice li a:hover {
+    text-decoration: underline;
+}
+
+.gallery {}
+
+.gallery ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery li p {
+    font: 14px;
+    text-align: center;
+}
+
+.gallery ul img {
+    width: 180px;
+}
+
+.gallery li:hover {
+    text-decoration: underline;
+}
+
+.slider {
+    flex: 1;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #eee;
+}
+
+.f_logo {
+    width: 200px;
+}
+
+.f_contents {
+    flex: 1;
+}
+
+.sns {
+    width: 260px;
+}

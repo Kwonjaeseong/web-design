@@ -52,15 +52,19 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="user">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
             </div>
             <div class="contents">
                 <div class="banner">
                     <div class="photo"><img src="./image/link1.jpg" alt="배너이미지"></div>
                     <div class="texts">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, natus.</p>
+                        <h3>Lorem ipsum dolor amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
                     </div>
-                    <div class="arrow">next</div>
+                    <div class="arrow"></div>
                 </div>
                 <div class="notice">
                     <h3>공지사항</h3>
@@ -89,23 +93,17 @@
                         <li>
                             <a href="#">
                                 <img src="./image/link1.jpg" alt="갤러리 이미지1">
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum sit amet.</p>
                             </a>
                         </li>
-                    </ul>
+                    
                         <li>
                             <a href="#">
                                 <img src="./image/link2.jpg" alt="갤러리 이미지2">
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum sit amet.</p>
                             </a>
                         </li>
-                    </ul>
-                        <li>
-                            <a href="#">
-                                <img src="./image/link3.jpg" alt="갤러리 이미지3">
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </a>
-                        </li>
+                    
                     </ul>
                 </div>
             </div>
@@ -125,7 +123,7 @@
         </div>
         <div class="footer">
             <div class="f_logo">
-                <img src="./image/Logo.png" alt="하단 로고">
+                <img src="./image/fLogo.png" alt="하단 로고">
             </div>
             <div class="f_contents">
                 <div class="f_menu">
@@ -142,6 +140,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(".gnb > li").hover(
+            function(){
+                $(this).find("ul").stop().fadeIn()
+            },
+            function(){
+                $(this).find("ul").stop().fadeOut()
+            }
+        )
+    </script>
     
 </body>
 </html>
