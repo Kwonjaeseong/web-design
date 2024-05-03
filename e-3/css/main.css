@@ -212,6 +212,7 @@ body {
     left: 0;
     height: 650px;
     display: none;
+    width: 100%;
 }
 
 .slide img {
