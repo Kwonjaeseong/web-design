@@ -21,11 +21,11 @@ $(function(){
     //tab
     $(".tab_title h3").click(function(){
         var idx = $(this).index()
-        $(".tab_title h3").removeClass("active")
-        $(this).addClass("active")
+        // $(".tab_title h3").removeClass("active")
+        // $(this).addClass("active")
 
-        $(".tab_contents ul").hide()
-        $(".tab_contents ul").eq(idx).show()
+        // $(".tab_contents ul").hide()
+        // $(".tab_contents ul").eq(idx).show()
 
         console.log(idx)
     })

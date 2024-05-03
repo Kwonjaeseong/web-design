@@ -189,10 +189,45 @@ body {
 
 .slider {
     flex: 1;
+    position: relative;
+    /* overflow: hidden; */
+    height: 650px;
 }
 
 .slider img {
     width: 100%;
+}
+
+/* .slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+} */
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 650px;
+    display: none;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #fff;
 }
 
 .footer {
@@ -208,8 +243,13 @@ body {
 
 .f_contents {
     flex: 1;
+    margin-left: 50px;
 }
 
 .sns {
     width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
