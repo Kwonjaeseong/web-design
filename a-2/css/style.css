@@ -1,205 +1,207 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    color: #333;
-    background-color: #fff;
+  color: #333;
+  background-color: #fff;
 }
 
 .wrap {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .gnb::after {
-    content: "";
-    width: 1200px;
-    height: 0;
-    background-color: #eee;
-    position: absolute;
-    top:100px;
-    right: 0;
-    transition: all .5s;
+  content: "";
+  width: 1200px;
+  height: 0;
+  background-color: #eee;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  transition: all 0.5s;
 }
 
 .gnb.active::after {
-    height: 216px;
+  height: 216px;
 }
 
 .gnb {
-    display: flex;
-    z-index: 1;
-    position: relative;
+  display: flex;
+  z-index: 1;
+  position: relative;
 }
 
 .gnb > li {
-    position: relative;
+  position: relative;
 }
 
 .gnb > li:hover > a {
-    color: orangered;
+  color: orangered;
 }
 
 /* ' > ' 를 넣으면 바로 아래 자식을 타고 간다 */
 .gnb > li > a {
-    height: 100px;
-    padding: 0 50px;
-    display: block;
-    line-height: 100px;
+  height: 100px;
+  padding: 0 50px;
+  display: block;
+  line-height: 100px;
 }
 
 .gnb > li > a:hover {
-    color: orangered;
+  color: orangered;
 }
 
 .gnb .sub {
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    /* 포지션을 바꾸면 넓이를 다시 지정해줘야함 */
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  /* 포지션을 바꾸면 넓이를 다시 지정해줘야함 */
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  z-index: 1;
 }
 
 .gnb .sub li a {
-    display: block;
-    padding: 14px;
+  display: block;
+  padding: 14px;
 }
 
 .gnb .sub li a:hover {
-    background-color: #666;
-    color: #fff;
+  background-color: #666;
+  color: #fff;
 }
 
 .slider {
-    height: 300px;
-    /* 내 영역 바깥으로 나가있는걸 숨겨줌 */
-    overflow: hidden;
-    position: relative;
+  height: 300px;
+  /* 내 영역 바깥으로 나가있는걸 숨겨줌 */
+  overflow: hidden;
+  position: relative;
 }
 
 .sliders {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-
 .slide {
-    position: relative;
+  position: relative;
 }
 
 .slide h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #fff;
-    font-size: 40px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+  transform: translate(-50%, -50%);
 }
 
 .slide img {
-    display: block;
+  display: block;
 }
 
 .contents {
-    display: flex;
-    height: 200px;
-    gap: 15px;
-    padding: 10px 0;
+  display: flex;
+  height: 200px;
+  gap: 15px;
+  padding: 10px 0;
 }
 
 .tab {
-    /* background-color: red; */
+  /* background-color: red; */
 }
 
 .tab_title {
-    display: flex;
-    gap: 4px;
-    border-bottom: 3px solid orangered;
+  display: flex;
+  gap: 4px;
+  border-bottom: 3px solid orangered;
 }
 
 .tab_title h3 {
-    height: 42px;
-    background-color: #ddd;
-    flex: 1;
-    text-align: center;
-    line-height: 42px;
-    font-weight: normal;
-    font-size: 16px;
-    cursor: pointer;
+  height: 42px;
+  background-color: #ddd;
+  flex: 1;
+  text-align: center;
+  line-height: 42px;
+  font-weight: normal;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .tab_title h3.active {
-    background-color: orangered;
-    color: #fff;
+  background-color: orangered;
+  color: #fff;
 }
 
 .tab_contents .notice {
-    padding: 10px;
+  padding: 10px;
 }
 
 .notice li {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .notice li a {
-    display: block;
-    padding: 4px 0;
-    /* background-color: red; */
-    width: 70%;
-    /* 긴 문장 ...으로 사이즈에 맞게 처리하는 방법 */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  display: block;
+  padding: 4px 0;
+  /* background-color: red; */
+  width: 70%;
+  /* 긴 문장 ...으로 사이즈에 맞게 처리하는 방법 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .notice li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.tab, .banner, .link {
-    width: 390px;
+.tab,
+.banner,
+.link {
+  width: 390px;
 }
 
-.banner img, .link img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.banner img,
+.link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .tab_contents .gallery {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 }
 
 .tab_contents .gallery li {
-    display: inline-block;
-    padding: 25px 14px;
+  display: inline-block;
+  padding: 25px 14px;
 }
 
 .banner {
@@ -209,45 +211,43 @@ body {
 }
 
 .footer {
-    display: flex;
-    height: 100px;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-between;
-    background-color: #ddd;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #ddd;
 }
 
 .sns a img {
-   border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .modal {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 340px;
-    background-color: #fff;
-    border: 1px solid #666;
-    padding: 30px;
-    display: none;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 340px;
+  background-color: #fff;
+  border: 1px solid #666;
+  padding: 30px;
+  display: none;
 }
 
 .modal h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .modal p {
-    margin: 20px 0;
-    line-height: 1.5;
+  margin: 20px 0;
+  line-height: 1.5;
 }
 
 .modal button {
-    border: none;
-    padding: 6px 10px;
-    background-color: #666;
-    color: #fff;
+  border: none;
+  padding: 6px 10px;
+  background-color: #666;
+  color: #fff;
 }
-
-
